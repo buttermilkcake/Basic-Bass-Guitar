@@ -15,19 +15,7 @@ then learning the css and improving upon my html and then hopefully learning jav
 
 Oh the fretboard diagram form…..
 This took me months to figure out. I wanted to create a fretboard diagram that had the strings and fret numbers filled out, but let the 
-user guess which notes or note combos went into each fret/string coordinate. If they guessed correctly, they would get a response saying
-so. If they guessed incorrectly, they would get a response saying that. I knew this was an achieveable concept, but I had no freaking 
-clue how to approach this beast.
-
-I didn’t even know how to create it on a website. I started out by creating my own fretboard diagram, saving it as a pdf and uploading 
-it as a static element into my website. Then I dwelved into databases, and I created this information in a database in the command line,
-but I had no idea how to incorporate that into a table. I also didn’t know how to ‘control’ my database since I couldn’t see it and I 
-didn’t know how to make it do what I wanted it to do.Then I read about creating a database from a model class with Django and I did 
-that, but I still didn’t know how to incorporate that info into a table. Then I discovered how to make a table using html and I created 
-a table that was 12 columns x 4 rows. I filled in the fret numbers and the string names. That left the 48 cells that contained the note 
-or note combos. Then I started learning about forms and options. Each cell had the same 12 options and I figured out how to set that up,
-but this is what it looked like in my html file - this, listed 48 times. It was a huge, ugly thing and I knew that there was a datalist 
-widget and an opt group widget and If I were to read up on those, I could probably incorporate them with this and make it better. 
+user guess which notes or note combos went into each fret/string coordinate. If they guessed correctly, they would get a response saying so. If they guessed incorrectly, they would get a response saying that. I knew this was an achieveable concept, but I had no freaking clue how to approach this beast. I didn’t even know how to create it on a website. I started out by creating my own fretboard diagram, saving it as a pdf and uploading it as a static element into my website. Then I dwelved into databases, and I created this information in a database in the command line, but I had no idea how to incorporate that into a table. I also didn’t know how to ‘control’ my database since I couldn’t see it and I didn’t know how to make it do what I wanted it to do.Then I read about creating a database from a model class with Django and I did that, but I still didn’t know how to incorporate that info into a table. Then I discovered how to make a table using html and I created a table that was 12 columns x 4 rows. I filled in the fret numbers and the string names. That left the 48 cells that contained the note or note combos. Then I started learning about forms and options. Each cell had the same 12 options and I figured out how to set that up, but this is what it looked like in my html file - this, listed 48 times. It was a huge, ugly thing and I knew that there was a datalist widget and an opt group widget and If I were to read up on those, I could probably incorporate them with this and make it better. 
        <td>
           <select>
             <option value="A">A</option>
@@ -54,4 +42,6 @@ it is still in the transitional phase.
 
 I deployed my website to Heroku on 1/22/18, not knowing that local data you enter isn't usually copied to a live deployment, that it is
 considered test data. So I need to retrieve my 'test data' which wasn't test data to me and put it back where it belongs!
+
+In February, I was working on another project that required that I upgrade to Python 3.6.4 from the Python 3.5.X version I was using and I must have had to upgrade Django as well from 1.11.X to 2.0. I did those things and then deleted my old versions, on which Basic Bass Guitar is quite dependent upon. When I then tried to access the files for this website in the local environment in early March to work on them, I was in for a rude awakening and I learned some very important lessons. I had to delete my old virtual files, reload them, reinstall Django, fix URL changes, the list goes on..... It is now March 23rd and I'm still working through the issues. I'm making progress but also wrapping my head around the possibility that I will have to start over. 
 
