@@ -1,47 +1,23 @@
 # Basic-Bass-Guitar
 A description of the website I created, https://basic-bass-guitar.herokuapp.com/
 
-*disclaimer: this website is a work in progress*
+I’ve created a website call Basic Bass Guitar that allows users to learn the notes on the fretboard of the bass guitar, the major, 
+minor and blues scales, the circle of 5ths, what you need to know to start jamming, a basic blues pattern and also allow them to 
+listen to and play along with some different styles of songs.
 
-I’m creating a website call Basic Bass Guitar that will allow users to learn the notes on the fretboard of the bass guitar, the major, 
-minor and blues scales, the circle of 5ths, what you need to know to start jamming, maybe a basic blues pattern and also allow them to 
-use my song generator, which will give them a title of a song and the key it’s in. They can then go to youtube and 
-play along to the song.
+A big part of this project was attitude - learning to embrace imperfections, accepting that my first attempts at this would probably be ugly and clunky. Focusing on being in the moment, trying to focus on the step I was at, not thinking (or worrying) about the next thing I was going to have to figure out. Meeting myself where I was at at that moment in time.
 
-A big part of this project was attitude - learning to embrace imperfections, accepting that the first attempts would be very ugly and 
-clunky. Focusing on being in the moment, trying to focus on the step I was at, not thinking (or worrying) about the next thing I was 
-going to have to figure out. Meeting myself where I was at at that moment in time. Learning the html and creating first with just that, 
-then learning the css and improving upon my html and then hopefully learning javascript and improving upon previous iterations.
+Oh the fretboard diagram form…..This took me months to figure out. I wanted to create a fretboard diagram that had the strings and fret numbers filled out, but let the user guess which notes or note combos went into each fret/string coordinate. If they guessed correctly, they would get a response saying so. If they guessed incorrectly, they would get a response saying that. I knew this was an achieveable concept, but I had no freaking clue how to approach this beast. I gave up on the fillable form concept of the design for this project. I started out by creating my own fretboard diagram, saving it as a pdf and uploading it as a static element into my website. Then I dwelved into databases, and I created this information in a database in the command line, but I had no idea how to incorporate that into a table. I also didn’t know how to ‘control’ my database since I couldn’t see it and I didn’t know how to make it do what I wanted it to do.Then I read about creating a database from a model class with Django and I did that, but I still didn’t know how to incorporate that info into a table. Then I discovered how to make a table using html and I created tables. I have learned about CSS grids and I suspect these are a better way to go. I also know there are probably cleaner ways to design my tables so that they are not so lengthy. I would like to recreate this website using more html, css and Javascript. I need to learn Javascript. I also want to work more with html, css and relational databases.   
+      
+I originally deployed my website to Heroku on 1/22/18, not knowing that local data you enter isn't usually copied to a live deployment, that it is considered test data. 
 
-Oh the fretboard diagram form…..
-This took me months to figure out. I wanted to create a fretboard diagram that had the strings and fret numbers filled out, but let the 
-user guess which notes or note combos went into each fret/string coordinate. If they guessed correctly, they would get a response saying so. If they guessed incorrectly, they would get a response saying that. I knew this was an achieveable concept, but I had no freaking clue how to approach this beast. I didn’t even know how to create it on a website. I started out by creating my own fretboard diagram, saving it as a pdf and uploading it as a static element into my website. Then I dwelved into databases, and I created this information in a database in the command line, but I had no idea how to incorporate that into a table. I also didn’t know how to ‘control’ my database since I couldn’t see it and I didn’t know how to make it do what I wanted it to do.Then I read about creating a database from a model class with Django and I did that, but I still didn’t know how to incorporate that info into a table. Then I discovered how to make a table using html and I created a table that was 12 columns x 4 rows. I filled in the fret numbers and the string names. That left the 48 cells that contained the note or note combos. Then I started learning about forms and options. Each cell had the same 12 options and I figured out how to set that up, but this is what it looked like in my html file - this, listed 48 times. It was a huge, ugly thing and I knew that there was a datalist widget and an opt group widget and If I were to read up on those, I could probably incorporate them with this and make it better. 
-       <td>
-          <select>
-            <option value="A">A</option>
-            <option value="A#_Bflat">A#_Bflat</option>
-            <option value="B">B</option>
-            <option value="C">C</option>
-            <option value="C#_Dflat">C#_Dflat</option>
-            <option value="D">D</option>
-            <option value="D#_Eflat">D#_Eflat</option>
-            <option value="E">E</option>
-            <option value="F">F</option>
-            <option value="F#_Gflat">F#_Gflat</option>
-            <option value="G">G</option>
-            <option value="G">G#_Aflat</option>
-          </select>
-          <button type="submit">Submit</button>
-        </td>
+In February, I was working on another project that required that I upgrade to Python 3.6.4 from the Python 3.5.X version I was using and I must have had to upgrade Django as well from 1.11.X to 2.0. I did those things and then deleted my old versions, which Basic Bass Guitar is quite dependent on. When I then tried to access the files for this website in the local environment in early March to work on them, I was in for a rude awakening and I learned some very important lessons. I had to delete my old virtual files, reload them, reinstall Django, fix URL changes, the list goes on..... It is now March 23rd and I'm still working through the issues. I'm making progress but also wrapping my head around the possibility that I will have to start over. 
 
-At this point the submit button is freaking me out because I had no idea how to set up the submit trail and be able to take in what 
-somebody entered, figure out if it was correct and if so, send that message back to them. Or if it was incorrect, let them know that 
-as well. I have a form that lists the options, for each cell, has a submit button that goes nowhere and the form looks ugly. However,
-it is still in the transitional phase.
+As of 4/16/18 - I solved my software version issues, made some improvements to my website and pushed those changes to Heroku. My deplyment didn't work at first because my runtime.txt file still showed my Python version as 3.5.x. Once I fixed that issue, my website updates were successfully deployed, and I felt like a rockstar!!!
 
 
-I deployed my website to Heroku on 1/22/18, not knowing that local data you enter isn't usually copied to a live deployment, that it is
-considered test data. So I need to retrieve my 'test data' which wasn't test data to me and put it back where it belongs!
 
-In February, I was working on another project that required that I upgrade to Python 3.6.4 from the Python 3.5.X version I was using and I must have had to upgrade Django as well from 1.11.X to 2.0. I did those things and then deleted my old versions, on which Basic Bass Guitar is quite dependent upon. When I then tried to access the files for this website in the local environment in early March to work on them, I was in for a rude awakening and I learned some very important lessons. I had to delete my old virtual files, reload them, reinstall Django, fix URL changes, the list goes on..... It is now March 23rd and I'm still working through the issues. I'm making progress but also wrapping my head around the possibility that I will have to start over. 
+
+
+
 
