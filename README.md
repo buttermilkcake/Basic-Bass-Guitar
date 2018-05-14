@@ -15,6 +15,8 @@ In February, I was working on another project that required that I upgrade to Py
 
 As of 4/16/18 - I solved my software version issues, made some improvements to my website and pushed those changes to Heroku. My deplyment didn't work at first because my runtime.txt file still showed my Python version as 3.5.x. Once I fixed that issue, my website updates were successfully deployed, and I felt like a rockstar!!!
 
+5/14/18 - The spacing in my tables on the 12 bar blues page was wrong, so I fixed that with a <nobr></nobr> tag on the cells where it was needed. Are there better ways to set up the info I set up in my tables? Yes, but the way I set it up is working at this point in time.
+
 
 
 
