@@ -1,0 +1,5 @@
+Open CMD and CD to bass_guitar directory $ cd bass_guitar
+Get into virtual environment $ 11_env\Scripts\activate
+If adding new files $ git add .
+If not adding new files, just changes to existing files $ git commit -am "Description of what you're doing."
+git push heroku master
